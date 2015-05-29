@@ -55,14 +55,20 @@
 		+text-overflow()
 		font-weight: 700
 		text-transform: uppercase
+		margin-bottom: 1em
 		a
 			display: inline
+	h5 
+		font-size: 1em
+		padding: 5px 0
+		font-weight: 400
+		border-bottom: 1px dotted #ddd
 	p
 		margin-bottom: 0
 	a
 		color: #333	
 		&:hover 
-			color: darken(adjust_hue($accent, 136), 11)
+			color: $blue	
 .article-list
 	+make-md-column(8)
 	.media
@@ -74,7 +80,11 @@
 	.media-object
 		width: 180px	
 		@media (max-width:768px)
-			width: 60px		
+			width: 60px	
+	h1 
+		font-size: 1em
+	.section-header 
+		font-size: initial
 	h2
 		font-weight: 400
 		@media (max-width:480px)
@@ -87,3 +97,24 @@
 		margin-bottom: 0.5em
 	.inline
 		margin-bottom: 0.2em
+.post-short 
+	margin-top: 1em
+	.post-date
+		color: #999
+	a 
+		color:	#000
+		&:hover 
+			color: $blue
+	.btn-read-more 
+		color: $red
+		&:hover
+			color: $blue
+		i 
+			vertical-align: middle
+			margin: 0 0 0 2px	
+	iframe
+		max-width: 100%	
+	table
+		width: 100%
+		tr td 
+			font-size: initial		
