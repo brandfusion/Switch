@@ -8,15 +8,19 @@
 	.product-image
 		+make-sm-column(7)	
 		.thumbnails
-			+make-sm-column(2)
+			+make-sm-column(12)
 			+make-md-column(12)
-			+make-lg-column(2)		
+			+make-lg-column(12)		
 			.thumbs  //?!?
 				+clearfix	
 			padding: 0
 			a
 				border: 1px solid #eee
-				display: block
+				display: inline-block
+				float: left
+				float: left
+				width: 15%
+				margin: 0 $spacing $spacing 0					
 				background-color: #fff
 			img 
 				max-width: 100%
@@ -28,24 +32,18 @@
 					+h-nav					
 				li 
 					width: 15%
-				a 
-					margin-right: $spacing	
-					float: left
-					width: 15%
+				
 			@media (min-width: $screen-lg-min)
 				padding-right: $spacing
 				ul 
 					+v-nav	
 				li 
-					width: 100%
-				a 
-					margin-bottom: $spacing
-					float: none
-					width: 100%
+					width: 15%
+				
 		.main-image
-			+make-sm-column(10)
+			+make-sm-column(12)
 			+make-md-column(12)
-			+make-lg-column(10)
+			+make-lg-column(12)
 			position: relative
 			// padding-right: 0
 			margin-bottom: $spacing
